@@ -36,6 +36,14 @@ public class InventoryConfig {
                 .summary("This fourth edition of Robert Sedgewick and Kevin Wayne’s Algorithms is the leading textbook on algorithms today and is widely used in colleges and universities worldwide. This book surveys the most important computer algorithms currently in use and provides a full treatment of data structures and algorithms for sorting, searching, graph processing, and string processing--including fifty algorithms every programmer should know. In this edition, new Java implementations are written in an accessible modular programming style, where all of the code is exposed to the reader and ready to use.")
                 .build();
 
+        final Book alg2 = Book.builder()
+                .isbn("978-0321573513")
+                .name("Algorithms (4th Edition)")
+                .publisher("Addison-Wesley Professional")
+                .yearPublished(2011)
+                .summary("This fourth edition of Robert Sedgewick and Kevin Wayne’s Algorithms is the leading textbook on algorithms today and is widely used in colleges and universities worldwide. This book surveys the most important computer algorithms currently in use and provides a full treatment of data structures and algorithms for sorting, searching, graph processing, and string processing--including fifty algorithms every programmer should know. In this edition, new Java implementations are written in an accessible modular programming style, where all of the code is exposed to the reader and ready to use.")
+                .build();
+
         final Book xen = Book.builder()
                 .isbn("978-1593271862")
                 .name("The Book Of Xen - A Practical Guide For The System Administrator")
@@ -48,6 +56,7 @@ public class InventoryConfig {
         inventory.add(xen);
         inventory.add(sicp);
         inventory.add(alg);
+        inventory.add(alg2);
         inventory.add(unix);
 
         return inventory;
